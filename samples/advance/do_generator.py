@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+#python 3.5中,range函数返回的不再是list对象，而是范围对象
 s = (x * x for x in range(5))
 print(s)
 for x in s:
