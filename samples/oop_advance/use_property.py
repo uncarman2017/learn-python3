@@ -15,6 +15,7 @@ class Student(object):
             raise ValueError('score must between 0 ~ 100!')
         self._score = value
 
+
 s = Student()
 s.score = 60
 print('s.score =', s.score)

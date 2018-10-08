@@ -10,5 +10,4 @@ print('type(abs) =', type(abs))
 
 import types
 
-print('type(\'abc\')==str?', type('abc')==str)
-
+print('type(\'abc\')==str?', type('abc') == str)
