@@ -9,4 +9,4 @@ d = {
 print('d[\'Michael\'] =', d['Michael'])
 print('d[\'Bob\'] =', d['Bob'])
 print('d[\'Tracy\'] =', d['Tracy'])
-print('d.get(\'Thomas\', -1) =', d.get('Thomas', -1))
+print('d.get(\'Thomas\', -1) =', d.get('Thomas', -1))  #取不到字典值则返回自定义值
