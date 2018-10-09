@@ -40,8 +40,10 @@ Python 3 教程
 /samples/commonlib
 
 ##第十五章 常用第三方模块
+/samples/packages
 
 ##第十六章 virtualenv
+见教程
 
 ##第十七章 图形界面
 /samples/gui
