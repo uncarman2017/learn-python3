@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 可变参数例子
+
 
 def hello(greeting, *args):
-    if (len(args) == 0):
+    if len(args) == 0:
         print('%s!' % greeting)
     else:
         print('%s, %s!' % (greeting, ', '.join(args)))

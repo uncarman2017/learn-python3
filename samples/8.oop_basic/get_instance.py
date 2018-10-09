@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 获取实例
+
 
 class Animal(object):
     pass
 
+
 class Dog(Animal):
     pass
 
+
 class Husky(Dog):
     pass
+
 
 a = Animal()
 d = Dog()

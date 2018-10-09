@@ -3,30 +3,34 @@
 
 from collections import Iterable, Iterator
 
+
 def g():
     yield 1
     yield 2
     yield 3
 
-#isinstance(*,Iterable) 是否可迭代
+# isinstance(*,Iterable) 是否可迭代
+
+
 print('Iterable? [1, 2, 3]:', isinstance([1, 2, 3], Iterable))
 print('Iterable? \'abc\':', isinstance('abc', Iterable))
 print('Iterable? 123:', isinstance(123, Iterable))
 print('Iterable? g():', isinstance(g(), Iterable))
 
-#Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。
+# Python的Iterator对象表示的是一个数据流，Iterator对象可以被next()函数调用并不断返回下一个数据，直到没有数据时抛出StopIteration错误。
 print('Iterator? [1, 2, 3]:', isinstance([1, 2, 3], Iterator))
 print('Iterator? iter([1, 2, 3]):', isinstance(iter([1, 2, 3]), Iterator))
 print('Iterator? \'abc\':', isinstance('abc', Iterator))
 print('Iterator? 123:', isinstance(123, Iterator))
 print('Iterator? g():', isinstance(g(), Iterator))
 
-#列表迭代
+# 列表迭代
 print('for x in [1, 2, 3, 4, 5]:')
 for x in [1, 2, 3, 4, 5]:
     print(x)
 
-print('for x in iter([1, 2, 3, 4, 5]):')   #iter函数将对象转换成迭代器返回
+# iter函数将对象转换成迭代器返回
+print('for x in iter([1, 2, 3, 4, 5]):')
 for x in iter([1, 2, 3, 4, 5]):
     print(x)
 
@@ -56,8 +60,9 @@ for k, v in d.items():
     print('item:', k, v)
 
 # iter list with index:
+# enumerate方法返回一个可枚举对象
 print('iter enumerate([\'A\', \'B\', \'C\']')
-for i, value in enumerate(['A', 'B', 'C']): #enumerate方法返回一个可枚举对象
+for i, value in enumerate(['A', 'B', 'C']):
     print(i, value)
 
 # iter complex list:

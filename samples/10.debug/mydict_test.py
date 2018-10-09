@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import unittest
-
 from mydict import Dict
+
 
 class TestDict(unittest.TestCase):
 
@@ -34,6 +34,6 @@ class TestDict(unittest.TestCase):
         with self.assertRaises(AttributeError):
             value = d.empty
 
+
 if __name__ == '__main__':
     unittest.main()
-

@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# metaclass是创建类，所以必须从`type`类型派生：
+# 元数据类的例子
+# metaclass是创建类，所以必须从`type`类型派生,并且类名带上后缀Metaclass
+
+
 class ListMetaclass(type):
     def __new__(cls, name, bases, attrs):
         attrs['add'] = lambda self, value: self.append(value)

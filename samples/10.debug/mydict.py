@@ -1,3 +1,5 @@
+# 自定义类和特殊方法重载
+
 class Dict(dict):
 
     def __init__(self, **kw):

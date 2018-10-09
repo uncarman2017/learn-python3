@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 实现类的保护成员
+
 
 class Student(object):
 
     def __init__(self, name, score):
-        self.__name = name
+        self.__name = name      # __前缀声明的变量是私有成员
         self.__score = score
 
     def get_name(self):

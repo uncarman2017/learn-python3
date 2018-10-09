@@ -3,9 +3,10 @@
 
 ' Simple ORM using metaclass '
 
+# 字段基类
+
 
 class Field(object):
-
     def __init__(self, name, column_type):
         self.name = name
         self.column_type = column_type
@@ -15,19 +16,16 @@ class Field(object):
 
 
 class StringField(Field):
-
     def __init__(self, name):
         super(StringField, self).__init__(name, 'varchar(100)')
 
 
 class IntegerField(Field):
-
     def __init__(self, name):
         super(IntegerField, self).__init__(name, 'bigint')
 
 
 class ModelMetaclass(type):
-
     def __new__(cls, name, bases, attrs):
         if name == 'Model':
             return type.__new__(cls, name, bases, attrs)

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 class Dict(dict):
     '''
     Simple dict but also support access as x.y style.
@@ -24,6 +25,7 @@ class Dict(dict):
         ...
     AttributeError: 'Dict' object has no attribute 'empty'
     '''
+
     def __init__(self, **kw):
         super(Dict, self).__init__(**kw)
 
@@ -36,7 +38,8 @@ class Dict(dict):
     def __setattr__(self, key, value):
         self[key] = value
 
-if __name__=='__main__':
-    import doctest
-    doctest.testmod()
 
+if __name__ == '__main__':
+    import doctest
+
+    doctest.testmod()

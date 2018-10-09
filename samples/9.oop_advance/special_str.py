@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 class Student(object):
 
     def __init__(self, name):
@@ -10,5 +11,6 @@ class Student(object):
         return 'Student object (name: %s)' % self.name
 
     __repr__ = __str__
+
 
 print(Student('Michael'))

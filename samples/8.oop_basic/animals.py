@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 单类继承演示
+
 
 class Animal(object):
     def run(self):

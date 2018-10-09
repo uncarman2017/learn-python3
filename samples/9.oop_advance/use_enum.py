@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 枚举类实例
+
 
 from enum import Enum, unique
+
 
 @unique
 class Weekday(Enum):
@@ -12,6 +15,7 @@ class Weekday(Enum):
     Thu = 4
     Fri = 5
     Sat = 6
+
 
 day1 = Weekday.Mon
 
