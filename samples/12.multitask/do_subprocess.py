@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 调用子进程执行操作系统指令
+
 
 import subprocess
 

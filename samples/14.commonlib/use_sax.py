@@ -3,6 +3,7 @@
 
 from xml.parsers.expat import ParserCreate
 
+
 class DefaultSaxHandler(object):
     def start_element(self, name, attrs):
         print('sax:start_element: %s, attrs: %s' % (name, str(attrs)))
@@ -12,6 +13,7 @@ class DefaultSaxHandler(object):
 
     def char_data(self, text):
         print('sax:char_data: %s' % text)
+
 
 xml = r'''<?xml version="1.0"?>
 <ol>

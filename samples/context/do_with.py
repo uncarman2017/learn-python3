@@ -3,11 +3,13 @@
 
 from contextlib import contextmanager
 
+
 @contextmanager
 def log(name):
     print('[%s] start...' % name)
     yield
     print('[%s] end.' % name)
+
 
 with log('DEBUG'):
     print('Hello, world!')

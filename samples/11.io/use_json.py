@@ -9,6 +9,7 @@ print('JSON Data is a str:', data)
 reborn = json.loads(data)
 print(reborn)
 
+
 class Student(object):
 
     def __init__(self, name, age, score):
@@ -18,6 +19,7 @@ class Student(object):
 
     def __str__(self):
         return 'Student object (%s, %s, %s)' % (self.name, self.age, self.score)
+
 
 s = Student('Bob', 20, 88)
 std_data = json.dumps(s, default=lambda obj: obj.__dict__)

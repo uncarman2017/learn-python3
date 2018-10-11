@@ -1,17 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# 用锁使线程同步化
 
-import time, threading
+
+import threading
 
 # 假定这是你的银行存款:
 balance = 0
 lock = threading.Lock()
 
+
 def change_it(n):
     # 先存后取，结果应该为0:
-    global balance
+    global balance  # 全局变量
     balance = balance + n
     balance = balance - n
+
 
 def run_thread(n):
     for i in range(100000):
@@ -24,10 +28,11 @@ def run_thread(n):
             # 改完了一定要释放锁:
             lock.release()
 
+
 t1 = threading.Thread(target=run_thread, args=(5,))
 t2 = threading.Thread(target=run_thread, args=(8,))
 t1.start()
 t2.start()
-t1.join()
+t1.join()    # 线程依次执行
 t2.join()
 print(balance)

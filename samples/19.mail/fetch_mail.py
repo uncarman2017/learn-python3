@@ -12,6 +12,7 @@ email = input('Email: ')
 password = input('Password: ')
 pop3_server = input('POP3 server: ')
 
+
 def guess_charset(msg):
     charset = msg.get_charset()
     if charset is None:
@@ -21,11 +22,13 @@ def guess_charset(msg):
             charset = content_type[pos + 8:].strip()
     return charset
 
+
 def decode_str(s):
     value, charset = decode_header(s)[0]
     if charset:
         value = value.decode(charset)
     return value
+
 
 def print_info(msg, indent=0):
     if indent == 0:
@@ -55,6 +58,7 @@ def print_info(msg, indent=0):
             print('%sText: %s' % ('  ' * indent, content + '...'))
         else:
             print('%sAttachment: %s' % ('  ' * indent, content_type))
+
 
 # 连接到POP3服务器:
 server = poplib.POP3(pop3_server)

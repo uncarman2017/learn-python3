@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-from datetime import datetime
 import os
+from datetime import datetime
 
 pwd = os.path.abspath('.')
 
