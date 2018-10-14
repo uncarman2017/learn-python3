@@ -1,4 +1,4 @@
-#函数式编程
+# 函数式编程
 decorator.py: 装饰器
 do_filter.py: 过滤序列
 do_map.py: map函数示例

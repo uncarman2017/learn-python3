@@ -1,4 +1,4 @@
-#Python基础
+# Python基础
 1.do_for.py: for循环 <br/>
 2.do_if.py: if判断语句 <br/>
 3.do_input.py: input方法 <br/>
